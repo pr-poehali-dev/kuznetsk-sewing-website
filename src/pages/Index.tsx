@@ -244,36 +244,6 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="font-heading text-4xl font-bold mb-4 text-center">Портфолио</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Примеры готовых изделий наших клиентов. Работаем с различными типами тканей и моделями любой сложности.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { img: 'https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/d8ead7bc-8816-4c23-af9c-5bce848545d3.jpg', title: 'Корпоративная униформа' },
-              { img: 'https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/fff871eb-6fe8-4e91-a422-84a6cbbd5267.jpg', title: 'Производственный процесс' },
-              { img: 'https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/ecb697b3-2b8c-48eb-869e-65bf07911de6.jpg', title: 'Современное оборудование' }
-            ].map((item, idx) => (
-              <Card key={idx} className="overflow-hidden group cursor-pointer hover-scale border-primary/20">
-                <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={item.img} 
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-                <CardContent className="pt-4">
-                  <h3 className="font-heading text-lg font-bold">{item.title}</h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="faq" className="py-20 bg-muted">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-heading text-4xl font-bold mb-12 text-center">Часто задаваемые вопросы</h2>
