@@ -37,14 +37,12 @@ export default function Index() {
       <header className="sticky top-0 z-50 bg-secondary/95 backdrop-blur supports-[backdrop-filter]:bg-secondary/80 border-b border-primary/20">
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded flex items-center justify-center text-primary-foreground font-heading font-bold text-xl">
-                К
-              </div>
-              <div>
-                <h1 className="font-heading text-xl font-bold text-secondary-foreground">КШФ</h1>
-                <p className="text-xs text-muted-foreground">с 1941 года</p>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="https://cdn.poehali.dev/files/690bd893-5a98-434c-910d-327d16f26e07.png" 
+                alt="КШФ" 
+                className="h-12 w-auto"
+              />
             </div>
             
             <nav className="hidden md:flex gap-6">
