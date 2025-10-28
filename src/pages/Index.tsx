@@ -76,7 +76,7 @@ export default function Index() {
               <Button size="lg" className="text-lg" onClick={() => scrollToSection('contact')}>
                 Отправить техзадание
               </Button>
-              <Button size="lg" variant="outline" className="text-lg border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary" onClick={() => scrollToSection('services')}>
+              <Button size="lg" className="text-lg bg-[#a11520] hover:bg-[#8a1119]" onClick={() => scrollToSection('services')}>
                 Наши услуги
               </Button>
             </div>
