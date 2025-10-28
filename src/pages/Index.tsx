@@ -64,44 +64,44 @@ export default function Index() {
 
       <section className="relative min-h-[600px] flex items-center text-secondary-foreground overflow-hidden red-fabric-bg">
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl animate-fade-in">
-            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 text-shadow">
+        <div className="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[600px]">
+          <div className="max-w-5xl w-full animate-fade-in text-center">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-shadow">
               Крупное швейное производство в Пензенской области
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-5">
                 <div className="bg-[#a11520] p-3 rounded-full">
-                  <Icon name="Users" className="text-white" size={28} />
+                  <Icon name="Users" className="text-white" size={32} />
                 </div>
                 <div>
-                  <div className="text-3xl font-heading font-bold text-white">100+</div>
-                  <div className="text-sm text-white/80">Квалифицированных швей</div>
+                  <div className="text-4xl font-heading font-bold text-white">100+</div>
+                  <div className="text-sm text-white/80 mt-1">Квалифицированных швей</div>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="flex flex-col items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-5">
                 <div className="bg-[#a11520] p-3 rounded-full">
-                  <Icon name="Factory" className="text-white" size={28} />
+                  <Icon name="Factory" className="text-white" size={32} />
                 </div>
                 <div>
-                  <div className="text-3xl font-heading font-bold text-white">5000 м²</div>
-                  <div className="text-sm text-white/80">Производственных площадей</div>
+                  <div className="text-4xl font-heading font-bold text-white">5000 м²</div>
+                  <div className="text-sm text-white/80 mt-1">Производственных площадей</div>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="flex flex-col items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-5 sm:col-span-2 lg:col-span-1">
                 <div className="bg-[#a11520] p-3 rounded-full">
-                  <Icon name="Calendar" className="text-white" size={28} />
+                  <Icon name="Calendar" className="text-white" size={32} />
                 </div>
                 <div>
-                  <div className="text-3xl font-heading font-bold text-white">С 1941</div>
-                  <div className="text-sm text-white/80">Года на рынке</div>
+                  <div className="text-4xl font-heading font-bold text-white">С 1941</div>
+                  <div className="text-sm text-white/80 mt-1">Года на рынке</div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="text-lg" onClick={() => scrollToSection('contact')}>
+            <div className="flex justify-center">
+              <Button size="lg" className="text-lg px-8" onClick={() => scrollToSection('contact')}>
                 Отправить техзадание
               </Button>
             </div>
