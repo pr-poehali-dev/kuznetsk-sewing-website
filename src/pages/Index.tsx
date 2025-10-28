@@ -69,9 +69,37 @@ export default function Index() {
             <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 text-shadow">
               Крупное швейное производство в Пензенской области
             </h2>
-            <p className="text-xl md:text-2xl mb-8 text-secondary-foreground/90">
-              Более 100 квалифицированных швей • 5000 м² производственных площадей • С 1941 года
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="bg-[#a11520] p-3 rounded-full">
+                  <Icon name="Users" className="text-white" size={28} />
+                </div>
+                <div>
+                  <div className="text-3xl font-heading font-bold text-white">100+</div>
+                  <div className="text-sm text-white/80">Квалифицированных швей</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="bg-[#a11520] p-3 rounded-full">
+                  <Icon name="Factory" className="text-white" size={28} />
+                </div>
+                <div>
+                  <div className="text-3xl font-heading font-bold text-white">5000 м²</div>
+                  <div className="text-sm text-white/80">Производственных площадей</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="bg-[#a11520] p-3 rounded-full">
+                  <Icon name="Calendar" className="text-white" size={28} />
+                </div>
+                <div>
+                  <div className="text-3xl font-heading font-bold text-white">С 1941</div>
+                  <div className="text-sm text-white/80">Года на рынке</div>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="text-lg" onClick={() => scrollToSection('contact')}>
                 Отправить техзадание
