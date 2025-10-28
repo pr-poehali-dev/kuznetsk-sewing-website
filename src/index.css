@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 13%;
 
-    --primary: 0 63% 51%;
+    --primary: 355 83% 38%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 26%;
@@ -32,7 +32,7 @@
 
     --border: 0 0% 89%;
     --input: 0 0% 89%;
-    --ring: 0 63% 51%;
+    --ring: 355 83% 38%;
 
     --radius: 0.25rem;
 
@@ -112,5 +112,32 @@
 
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .red-fabric-bg {
+    background-image: url("https://cdn.poehali.dev/files/1345bc34-acbc-489d-80f3-e61daf8145ec.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .red-fabric-overlay {
+    position: relative;
+  }
+
+  .red-fabric-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://cdn.poehali.dev/files/1345bc34-acbc-489d-80f3-e61daf8145ec.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+  }
+
+  .red-fabric-overlay > * {
+    position: relative;
+    z-index: 1;
   }
 }

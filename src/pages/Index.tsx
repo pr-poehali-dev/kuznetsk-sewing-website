@@ -62,14 +62,8 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="relative min-h-[600px] flex items-center bg-secondary text-secondary-foreground overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src="https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/ecb697b3-2b8c-48eb-869e-65bf07911de6.jpg" 
-            alt="Производственный цех"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="relative min-h-[600px] flex items-center text-secondary-foreground overflow-hidden red-fabric-bg">
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl animate-fade-in">
             <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 text-shadow">
@@ -119,7 +113,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-background">
+      <section id="about" className="py-20 bg-background red-fabric-overlay">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-4xl font-bold mb-12 text-center">О фабрике</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -231,7 +225,7 @@ export default function Index() {
             </Card>
           </div>
 
-          <Card className="bg-primary text-primary-foreground border-0">
+          <Card className="bg-primary text-primary-foreground border-0 red-fabric-bg">
             <CardContent className="pt-6">
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-4">
@@ -468,7 +462,7 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="bg-secondary text-secondary-foreground py-12 border-t border-primary/20">
+      <footer className="bg-secondary text-secondary-foreground py-12 border-t border-primary/20 red-fabric-overlay">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
