@@ -143,10 +143,10 @@ export default function Index() {
           <h2 className="font-heading text-4xl font-bold mb-12 text-center">О фабрике</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="bg-[#2a2a2a] p-6 rounded-lg mb-6">
+              <div className="bg-primary/10 p-6 rounded-lg mb-6">
                 <Icon name="Calendar" className="text-primary mb-4" size={32} />
-                <h3 className="font-heading text-2xl font-bold mb-3 text-black">История с 1941 года</h3>
-                <p className="text-black leading-relaxed">
+                <h3 className="font-heading text-2xl font-bold mb-3">История с 1941 года</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Кузнецкая швейная фабрика — одно из старейших производственных предприятий Пензенской области. 
                   За более чем 80 лет работы мы прошли путь от небольшого цеха до крупного современного производства 
                   с полным технологическим циклом.
