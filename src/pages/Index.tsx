@@ -471,10 +471,10 @@ export default function Index() {
             </div>
             
             <div className="flex gap-4">
-              <Button variant="outline" size="icon" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+              <Button variant="outline" size="icon" className="border-[#a11520] text-[#a11520] hover:bg-[#a11520] hover:text-white">
                 <Icon name="Phone" size={20} />
               </Button>
-              <Button variant="outline" size="icon" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+              <Button variant="outline" size="icon" className="border-[#a11520] text-[#a11520] hover:bg-[#a11520] hover:text-white">
                 <Icon name="Mail" size={20} />
               </Button>
             </div>
