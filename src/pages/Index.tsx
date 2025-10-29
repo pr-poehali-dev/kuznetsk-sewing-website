@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -18,6 +18,26 @@ export default function Index() {
     volume: '',
     message: ''
   });
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up, .animate-fade-in');
+    animatedElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -125,8 +145,7 @@ export default function Index() {
             ].map((item, idx) => (
               <Card 
                 key={idx} 
-                className="hover-scale border-primary/20 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] animate-fade-in opacity-0"
-                style={{ animationDelay: `${idx * 150}ms`, animationFillMode: 'forwards' }}
+                className="hover-scale border-primary/20 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] animate-fade-in"
               >
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
@@ -203,10 +222,10 @@ export default function Index() {
 
       <section id="services" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="font-heading text-4xl font-bold mb-12 text-center slide-in-up" style={{ animationDelay: '0ms' }}>Услуги</h2>
+          <h2 className="font-heading text-4xl font-bold mb-12 text-center slide-in-up">Услуги</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="border-primary/20 slide-in-left" style={{ animationDelay: '200ms' }}>
+            <Card className="border-primary/20 slide-in-left">
               <CardContent className="pt-6">
                 <Icon name="Shirt" className="text-primary mb-4" size={32} />
                 <h3 className="font-heading text-2xl font-bold mb-4">Виды производства</h3>
@@ -231,7 +250,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 slide-in-right" style={{ animationDelay: '400ms' }}>
+            <Card className="border-primary/20 slide-in-right">
               <CardContent className="pt-6">
                 <Icon name="Package" className="text-primary mb-4" size={32} />
                 <h3 className="font-heading text-2xl font-bold mb-4">Типы продукции</h3>
@@ -257,7 +276,7 @@ export default function Index() {
             </Card>
           </div>
 
-          <Card className="bg-primary text-primary-foreground border-0 red-fabric-bg slide-in-up" style={{ animationDelay: '600ms' }}>
+          <Card className="bg-primary text-primary-foreground border-0 red-fabric-bg slide-in-up">
             <CardContent className="pt-6">
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-4">
@@ -278,10 +297,10 @@ export default function Index() {
 
       <section id="faq" className="py-20 bg-muted">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="font-heading text-4xl font-bold mb-12 text-center slide-in-up" style={{ animationDelay: '0ms' }}>Часто задаваемые вопросы</h2>
+          <h2 className="font-heading text-4xl font-bold mb-12 text-center slide-in-up">Часто задаваемые вопросы</h2>
           
           <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left" style={{ animationDelay: '100ms' }}>
+            <AccordionItem value="item-1" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left">
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Работаете ли вы с индивидуальными предпринимателями?
               </AccordionTrigger>
@@ -291,7 +310,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="bg-background border-primary/20 rounded-lg px-6 slide-in-right" style={{ animationDelay: '200ms' }}>
+            <AccordionItem value="item-2" className="bg-background border-primary/20 rounded-lg px-6 slide-in-right">
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Сколько времени занимает изготовление пробного образца?
               </AccordionTrigger>
@@ -301,7 +320,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left" style={{ animationDelay: '300ms' }}>
+            <AccordionItem value="item-3" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left">
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Можно ли использовать свои ткани и фурнитуру?
               </AccordionTrigger>
@@ -311,7 +330,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="bg-background border-primary/20 rounded-lg px-6 slide-in-right" style={{ animationDelay: '400ms' }}>
+            <AccordionItem value="item-4" className="bg-background border-primary/20 rounded-lg px-6 slide-in-right">
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Какие сроки производства для массовых партий?
               </AccordionTrigger>
@@ -321,7 +340,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left" style={{ animationDelay: '500ms' }}>
+            <AccordionItem value="item-5" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left">
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Работаете ли вы с маркетплейсами?
               </AccordionTrigger>
