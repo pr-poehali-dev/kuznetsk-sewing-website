@@ -64,6 +64,13 @@ export default function Index() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[600px]">
           <div className="max-w-5xl w-full animate-fade-in text-center">
+            <div className="mb-8 flex justify-center">
+              <img 
+                src="https://cdn.poehali.dev/files/f968529a-f0d1-4ff6-a678-2e89bbe87d7e.png" 
+                alt="КШФ - Кузнецкая швейная фабрика" 
+                className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-2xl"
+              />
+            </div>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-shadow">
               Крупное швейное производство в Пензенской области
             </h2>
