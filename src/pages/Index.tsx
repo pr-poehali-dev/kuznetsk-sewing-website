@@ -460,30 +460,47 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="bg-secondary text-secondary-foreground py-12 border-t border-primary/20 red-fabric-overlay">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left flex flex-col items-center md:items-start gap-4">
+      <footer className="bg-gradient-to-b from-secondary to-secondary/80 text-secondary-foreground py-16 border-t border-primary/20">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <img 
                 src="https://cdn.poehali.dev/files/0f245d7e-8c4e-43a7-9ade-a6fa2709a969.png" 
                 alt="КШФ" 
-                className="h-12 object-contain"
+                className="h-14 object-contain"
               />
-              <p className="text-muted-foreground">Качество проверенное временем с 1941 года</p>
+              <p className="text-muted-foreground text-center md:text-left">Качество проверенное временем с 1941 года</p>
             </div>
             
-            <div className="flex gap-4">
-              <Button variant="outline" size="icon" className="border-[#a11520] text-[#a11520] hover:bg-[#a11520] hover:text-white">
-                <Icon name="Phone" size={20} />
-              </Button>
-              <Button variant="outline" size="icon" className="border-[#a11520] text-[#a11520] hover:bg-[#a11520] hover:text-white">
-                <Icon name="Mail" size={20} />
-              </Button>
+            <div className="text-center md:text-left">
+              <h4 className="font-heading font-bold text-lg mb-4">Контакты</h4>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <Icon name="MapPin" size={18} className="text-primary" />
+                  <span className="text-sm">г. Кузнецк, ул. Рабочая 200</span>
+                </div>
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <Icon name="Phone" size={18} className="text-primary" />
+                  <span className="text-sm">8(841257)3-29-21</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center md:text-right">
+              <h4 className="font-heading font-bold text-lg mb-4">Мы в соцсетях</h4>
+              <div className="flex gap-3 justify-center md:justify-end">
+                <Button variant="outline" size="icon" className="border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+                  <Icon name="Phone" size={20} />
+                </Button>
+                <Button variant="outline" size="icon" className="border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+                  <Icon name="Mail" size={20} />
+                </Button>
+              </div>
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-primary/20 text-center text-sm text-muted-foreground">
-            <p>© 2025 Кузнецкая швейная фабрика. Все права защищены.</p>
+          <div className="pt-8 border-t border-primary/20 text-center">
+            <p className="text-sm text-muted-foreground">© 2025 Кузнецкая швейная фабрика. Все права защищены.</p>
           </div>
         </div>
       </footer>
