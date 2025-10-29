@@ -159,7 +159,7 @@ export default function Index() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Icon name="CheckCircle2" className="text-primary" size={20} />
-                  <span>Автоматизированный раскройный комплекс Morgan Technika</span>
+                  <span>Автоматизированный раскройный комплекс Morgan Tecnica</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="CheckCircle2" className="text-primary" size={20} />
