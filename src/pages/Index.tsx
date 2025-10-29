@@ -460,7 +460,7 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="bg-gradient-to-b from-secondary to-secondary/80 text-secondary-foreground py-16 border-t border-primary/20">
+      <footer className="bg-gradient-to-b from-secondary to-secondary/80 text-white py-16 border-t border-primary/20">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div className="flex flex-col items-center md:items-start gap-4">
@@ -469,38 +469,38 @@ export default function Index() {
                 alt="КШФ" 
                 className="h-14 object-contain"
               />
-              <p className="text-muted-foreground text-center md:text-left">Качество проверенное временем с 1941 года</p>
+              <p className="text-white/90 text-center md:text-left">Качество проверенное временем с 1941 года</p>
             </div>
             
             <div className="text-center md:text-left">
-              <h4 className="font-heading font-bold text-lg mb-4">Контакты</h4>
-              <div className="space-y-3 text-muted-foreground">
+              <h4 className="font-heading font-bold text-lg mb-4 text-white">Контакты</h4>
+              <div className="space-y-3 text-white/90">
                 <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <Icon name="MapPin" size={18} className="text-primary" />
+                  <Icon name="MapPin" size={18} className="text-white" />
                   <span className="text-sm">г. Кузнецк, ул. Рабочая 200</span>
                 </div>
                 <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <Icon name="Phone" size={18} className="text-primary" />
+                  <Icon name="Phone" size={18} className="text-white" />
                   <span className="text-sm">8(841257)3-29-21</span>
                 </div>
               </div>
             </div>
             
             <div className="text-center md:text-right">
-              <h4 className="font-heading font-bold text-lg mb-4">Мы в соцсетях</h4>
+              <h4 className="font-heading font-bold text-lg mb-4 text-white">Мы в соцсетях</h4>
               <div className="flex gap-3 justify-center md:justify-end">
-                <Button variant="outline" size="icon" className="border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+                <Button variant="outline" size="icon" className="border-white/30 text-white hover:bg-white hover:text-primary transition-all">
                   <Icon name="Phone" size={20} />
                 </Button>
-                <Button variant="outline" size="icon" className="border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+                <Button variant="outline" size="icon" className="border-white/30 text-white hover:bg-white hover:text-primary transition-all">
                   <Icon name="Mail" size={20} />
                 </Button>
               </div>
             </div>
           </div>
           
-          <div className="pt-8 border-t border-primary/20 text-center">
-            <p className="text-sm text-muted-foreground">© 2025 Кузнецкая швейная фабрика. Все права защищены.</p>
+          <div className="pt-8 border-t border-white/20 text-center">
+            <p className="text-sm text-white/80">© 2025 Кузнецкая швейная фабрика. Все права защищены.</p>
           </div>
         </div>
       </footer>
