@@ -48,7 +48,6 @@ export default function Index() {
             <nav className="hidden md:flex gap-6">
               <button onClick={() => scrollToSection('about')} className="text-secondary-foreground hover:text-primary transition-colors">О фабрике</button>
               <button onClick={() => scrollToSection('services')} className="text-secondary-foreground hover:text-primary transition-colors">Услуги</button>
-              <button onClick={() => scrollToSection('portfolio')} className="text-secondary-foreground hover:text-primary transition-colors">Портфолио</button>
               <button onClick={() => scrollToSection('faq')} className="text-secondary-foreground hover:text-primary transition-colors">FAQ</button>
               <button onClick={() => scrollToSection('contact')} className="text-secondary-foreground hover:text-primary transition-colors">Контакты</button>
             </nav>
