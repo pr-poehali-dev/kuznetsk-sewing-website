@@ -62,7 +62,7 @@ export default function Index() {
 
       <section className="relative min-h-[600px] flex items-center text-secondary-foreground overflow-hidden red-fabric-bg">
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[600px]">
+        <div className="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[600px] py-[73px]">
           <div className="max-w-5xl w-full animate-fade-in text-center">
             <div className="mb-8 flex justify-center">
               <img 
