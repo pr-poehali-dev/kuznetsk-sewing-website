@@ -116,7 +116,7 @@ export default function Index() {
               { icon: 'Scissors', title: 'Полный цикл', desc: 'От раскроя до упаковки под ключ' },
               { icon: 'ShoppingBag', title: 'Маркетплейсы', desc: 'Опыт работы с Wildberries, Ozon, Яндекс' },
               { icon: 'TrendingUp', title: 'Гибкие объёмы', desc: 'От пробных партий до массового производства' },
-              { icon: 'Clock', title: '24 часа', desc: 'Расчёт стоимости за 1 рабочий день' }
+              { icon: 'Clock', title: '24 часа', desc: 'Расчёт стоимости от 24 часов' }
             ].map((item, idx) => (
               <Card key={idx} className="hover-scale border-primary/20">
                 <CardContent className="pt-6">
@@ -328,7 +328,7 @@ export default function Index() {
       <section id="contact" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-4xl font-bold mb-4 text-center">Контакты</h2>
-          <p className="text-center text-muted-foreground mb-12">Отправьте техзадание — рассчитаем стоимость за 24 часа</p>
+          <p className="text-center text-muted-foreground mb-12">Отправьте техзадание — рассчитаем стоимость от 24 часов</p>
           
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <Card className="border-primary/20">
@@ -421,7 +421,7 @@ export default function Index() {
                     <Icon name="Phone" className="text-primary" size={24} />
                     <div>
                       <h3 className="font-heading text-lg font-bold mb-2">Телефон</h3>
-                      <p className="text-muted-foreground">+7 (XXX) XXX-XX-XX</p>
+                      <p className="text-muted-foreground">8(841257)3-29-21</p>
                     </div>
                   </div>
                 </CardContent>
