@@ -83,7 +83,7 @@ export default function Index() {
                   <Icon name="Factory" className="text-white" size={32} />
                 </div>
                 <div>
-                  <div className="text-4xl font-heading font-bold text-white">5000 м²</div>
+                  <div className="text-4xl font-heading font-bold text-white">8000 м²</div>
                   <div className="text-sm text-white/80 mt-1">Производственных площадей</div>
                 </div>
               </div>
