@@ -278,10 +278,10 @@ export default function Index() {
 
       <section id="faq" className="py-20 bg-muted">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="font-heading text-4xl font-bold mb-12 text-center">Часто задаваемые вопросы</h2>
+          <h2 className="font-heading text-4xl font-bold mb-12 text-center slide-in-up" style={{ animationDelay: '0ms' }}>Часто задаваемые вопросы</h2>
           
           <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="bg-background border-primary/20 rounded-lg px-6">
+            <AccordionItem value="item-1" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left" style={{ animationDelay: '100ms' }}>
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Работаете ли вы с индивидуальными предпринимателями?
               </AccordionTrigger>
@@ -291,7 +291,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="bg-background border-primary/20 rounded-lg px-6">
+            <AccordionItem value="item-2" className="bg-background border-primary/20 rounded-lg px-6 slide-in-right" style={{ animationDelay: '200ms' }}>
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Сколько времени занимает изготовление пробного образца?
               </AccordionTrigger>
@@ -301,7 +301,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="bg-background border-primary/20 rounded-lg px-6">
+            <AccordionItem value="item-3" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left" style={{ animationDelay: '300ms' }}>
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Можно ли использовать свои ткани и фурнитуру?
               </AccordionTrigger>
@@ -311,7 +311,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="bg-background border-primary/20 rounded-lg px-6">
+            <AccordionItem value="item-4" className="bg-background border-primary/20 rounded-lg px-6 slide-in-right" style={{ animationDelay: '400ms' }}>
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Какие сроки производства для массовых партий?
               </AccordionTrigger>
@@ -321,7 +321,7 @@ export default function Index() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="bg-background border-primary/20 rounded-lg px-6">
+            <AccordionItem value="item-5" className="bg-background border-primary/20 rounded-lg px-6 slide-in-left" style={{ animationDelay: '500ms' }}>
               <AccordionTrigger className="font-heading text-lg hover:text-primary">
                 Работаете ли вы с маркетплейсами?
               </AccordionTrigger>
