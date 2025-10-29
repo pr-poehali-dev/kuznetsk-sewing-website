@@ -463,8 +463,12 @@ export default function Index() {
       <footer className="bg-secondary text-secondary-foreground py-12 border-t border-primary/20 red-fabric-overlay">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="font-heading text-xl font-bold mb-2">Кузнецкая швейная фабрика</h3>
+            <div className="text-center md:text-left flex flex-col items-center md:items-start gap-4">
+              <img 
+                src="https://cdn.poehali.dev/files/0f245d7e-8c4e-43a7-9ade-a6fa2709a969.png" 
+                alt="КШФ" 
+                className="h-12 object-contain"
+              />
               <p className="text-muted-foreground">Качество проверенное временем с 1941 года</p>
             </div>
             
