@@ -489,10 +489,10 @@ export default function Index() {
             <div className="text-center md:text-right">
               <h4 className="font-heading font-bold text-lg mb-4 text-white">Мы в соцсетях</h4>
               <div className="flex gap-3 justify-center md:justify-end">
-                <Button variant="outline" size="icon" className="border-white/30 text-white hover:bg-white hover:text-primary transition-all">
+                <Button variant="outline" size="icon" className="border-white/50 bg-white/10 text-white hover:bg-white hover:text-primary transition-all">
                   <Icon name="Phone" size={20} />
                 </Button>
-                <Button variant="outline" size="icon" className="border-white/30 text-white hover:bg-white hover:text-primary transition-all">
+                <Button variant="outline" size="icon" className="border-white/50 bg-white/10 text-white hover:bg-white hover:text-primary transition-all">
                   <Icon name="Mail" size={20} />
                 </Button>
               </div>
