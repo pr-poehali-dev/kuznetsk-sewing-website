@@ -203,10 +203,10 @@ export default function Index() {
 
       <section id="services" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="font-heading text-4xl font-bold mb-12 text-center">Услуги</h2>
+          <h2 className="font-heading text-4xl font-bold mb-12 text-center slide-in-up" style={{ animationDelay: '0ms' }}>Услуги</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="border-primary/20">
+            <Card className="border-primary/20 slide-in-left" style={{ animationDelay: '200ms' }}>
               <CardContent className="pt-6">
                 <Icon name="Shirt" className="text-primary mb-4" size={32} />
                 <h3 className="font-heading text-2xl font-bold mb-4">Виды производства</h3>
@@ -231,7 +231,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20">
+            <Card className="border-primary/20 slide-in-right" style={{ animationDelay: '400ms' }}>
               <CardContent className="pt-6">
                 <Icon name="Package" className="text-primary mb-4" size={32} />
                 <h3 className="font-heading text-2xl font-bold mb-4">Типы продукции</h3>
@@ -257,7 +257,7 @@ export default function Index() {
             </Card>
           </div>
 
-          <Card className="bg-primary text-primary-foreground border-0 red-fabric-bg">
+          <Card className="bg-primary text-primary-foreground border-0 red-fabric-bg slide-in-up" style={{ animationDelay: '600ms' }}>
             <CardContent className="pt-6">
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-4">
