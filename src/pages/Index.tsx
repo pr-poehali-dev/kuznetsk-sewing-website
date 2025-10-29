@@ -109,11 +109,10 @@ export default function Index() {
 
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               { icon: 'Users', title: '100+ швей', desc: 'Квалифицированная команда профессионалов' },
               { icon: 'Factory', title: '8000 м²', desc: 'Производственные площади с современным оборудованием' },
-              { icon: 'Scissors', title: 'Полный цикл', desc: 'От раскроя до упаковки под ключ' },
               { icon: 'ShoppingBag', title: 'Маркетплейсы', desc: 'Опыт работы с Wildberries, Ozon, Яндекс' },
               { icon: 'TrendingUp', title: 'Гибкие объёмы', desc: 'От пробных партий до массового производства' },
               { icon: 'Clock', title: '24 часа', desc: 'Расчёт стоимости от 24 часов' }
