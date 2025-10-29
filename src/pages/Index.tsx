@@ -123,10 +123,14 @@ export default function Index() {
               { icon: 'TrendingUp', title: 'Гибкие объёмы', desc: 'От пробных партий до массового производства' },
               { icon: 'Clock', title: '24 часа', desc: 'Расчёт стоимости от 24 часов' }
             ].map((item, idx) => (
-              <Card key={idx} className="hover-scale border-primary/20 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+              <Card 
+                key={idx} 
+                className="hover-scale border-primary/20 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] animate-fade-in opacity-0"
+                style={{ animationDelay: `${idx * 150}ms`, animationFillMode: 'forwards' }}
+              >
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded">
+                    <div className="bg-primary/10 p-3 rounded transition-transform hover:scale-110">
                       <Icon name={item.icon as any} className="text-primary" size={24} />
                     </div>
                     <div>
