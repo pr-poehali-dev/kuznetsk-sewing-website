@@ -109,7 +109,7 @@ export default function Index() {
 
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
             {[
               { icon: 'Users', title: '100+ швей', desc: 'Квалифицированная команда профессионалов' },
               { icon: 'Factory', title: '8000 м²', desc: 'Производственные площади с современным оборудованием' },
@@ -117,7 +117,7 @@ export default function Index() {
               { icon: 'TrendingUp', title: 'Гибкие объёмы', desc: 'От пробных партий до массового производства' },
               { icon: 'Clock', title: '24 часа', desc: 'Расчёт стоимости от 24 часов' }
             ].map((item, idx) => (
-              <Card key={idx} className="hover-scale border-primary/20">
+              <Card key={idx} className="hover-scale border-primary/20 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded">
