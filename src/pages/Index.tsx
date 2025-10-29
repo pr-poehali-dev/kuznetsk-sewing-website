@@ -112,7 +112,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: 'Users', title: '100+ швей', desc: 'Квалифицированная команда профессионалов' },
-              { icon: 'Factory', title: '5000 м²', desc: 'Производственные площади с современным оборудованием' },
+              { icon: 'Factory', title: '8000 м²', desc: 'Производственные площади с современным оборудованием' },
               { icon: 'Scissors', title: 'Полный цикл', desc: 'От раскроя до упаковки под ключ' },
               { icon: 'ShoppingBag', title: 'Маркетплейсы', desc: 'Опыт работы с Wildberries, Ozon, Яндекс' },
               { icon: 'TrendingUp', title: 'Гибкие объёмы', desc: 'От пробных партий до массового производства' },
