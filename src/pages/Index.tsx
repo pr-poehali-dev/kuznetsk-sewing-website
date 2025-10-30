@@ -72,9 +72,7 @@ export default function Index() {
               <button onClick={() => scrollToSection('contact')} className="text-secondary-foreground hover:text-primary transition-colors">Контакты</button>
             </nav>
             
-            <Button onClick={() => scrollToSection('contact')} className="hidden md:flex">
-              Оставить заявку
-            </Button>
+
           </div>
         </div>
       </header>
@@ -124,11 +122,7 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <Button size="lg" className="text-lg px-8" onClick={() => scrollToSection('contact')}>
-                Отправить техзадание
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
@@ -167,7 +161,7 @@ export default function Index() {
       <section id="about" className="py-20 bg-background red-fabric-overlay">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-4xl font-bold mb-12 text-center">О фабрике</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <div className="animate-fade-in">
               <div className="bg-primary/10 p-6 rounded-lg mb-6">
                 <Icon name="Calendar" className="text-primary mb-4" size={32} />
@@ -197,24 +191,6 @@ export default function Index() {
                   <span>Система контроля качества на всех этапах</span>
                 </div>
               </div>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <img 
-                src="https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/fff871eb-6fe8-4e91-a422-84a6cbbd5267.jpg" 
-                alt="Оборудование"
-                className="rounded-lg w-full h-64 object-cover hover-scale"
-              />
-              <img 
-                src="https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/d8ead7bc-8816-4c23-af9c-5bce848545d3.jpg" 
-                alt="Продукция"
-                className="rounded-lg w-full h-64 object-cover hover-scale"
-              />
-              <img 
-                src="https://cdn.poehali.dev/projects/be1f1a86-dd96-4773-ae5d-d2c24bbafce7/files/ecb697b3-2b8c-48eb-869e-65bf07911de6.jpg" 
-                alt="Цех"
-                className="rounded-lg w-full h-64 object-cover hover-scale col-span-2"
-              />
             </div>
           </div>
         </div>
@@ -355,130 +331,56 @@ export default function Index() {
 
       <section id="contact" className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="font-heading text-4xl font-bold mb-4 text-center">Контакты</h2>
-          <p className="text-center text-muted-foreground mb-12">Отправьте техзадание — рассчитаем стоимость от 24 часов</p>
+          <h2 className="font-heading text-4xl font-bold mb-12 text-center">Контакты</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="max-w-2xl mx-auto space-y-6">
             <Card className="border-primary/20">
               <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <Icon name="MapPin" className="text-primary" size={24} />
                   <div>
-                    <Label htmlFor="name">Имя *</Label>
-                    <Input 
-                      id="name" 
-                      required 
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    />
+                    <h3 className="font-heading text-lg font-bold mb-2">Адрес</h3>
+                    <p className="text-muted-foreground">Пензенская область, г. Кузнецк, ул. Рабочая 200</p>
                   </div>
-                  
-                  <div>
-                    <Label htmlFor="company">Компания *</Label>
-                    <Input 
-                      id="company" 
-                      required 
-                      value={formData.company}
-                      onChange={(e) => setFormData({...formData, company: e.target.value})}
-                    />
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="contact">Email или телефон *</Label>
-                    <Input 
-                      id="contact" 
-                      required 
-                      value={formData.contact}
-                      onChange={(e) => setFormData({...formData, contact: e.target.value})}
-                    />
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="productType">Тип продукции</Label>
-                    <Input 
-                      id="productType" 
-                      placeholder="Например: женские блузки"
-                      value={formData.productType}
-                      onChange={(e) => setFormData({...formData, productType: e.target.value})}
-                    />
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="volume">Примерный объём</Label>
-                    <Input 
-                      id="volume" 
-                      placeholder="Например: 1000 единиц"
-                      value={formData.volume}
-                      onChange={(e) => setFormData({...formData, volume: e.target.value})}
-                    />
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="message">Сообщение</Label>
-                    <Textarea 
-                      id="message" 
-                      rows={4} 
-                      placeholder="Опишите ваш проект..."
-                      value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    />
-                  </div>
-                  
-                  <Button type="submit" className="w-full" size="lg">
-                    Отправить заявку
-                  </Button>
-                </form>
+                </div>
               </CardContent>
             </Card>
 
-            <div className="space-y-6">
-              <Card className="border-primary/20">
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-4">
-                    <Icon name="MapPin" className="text-primary" size={24} />
-                    <div>
-                      <h3 className="font-heading text-lg font-bold mb-2">Адрес</h3>
-                      <p className="text-muted-foreground">Пензенская область, г. Кузнецк, ул. Рабочая 200</p>
-                    </div>
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <Icon name="Phone" className="text-primary" size={24} />
+                  <div>
+                    <h3 className="font-heading text-lg font-bold mb-2">Телефон</h3>
+                    <p className="text-muted-foreground">8(841257)3-29-21</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card className="border-primary/20">
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-4">
-                    <Icon name="Phone" className="text-primary" size={24} />
-                    <div>
-                      <h3 className="font-heading text-lg font-bold mb-2">Телефон</h3>
-                      <p className="text-muted-foreground">8(841257)3-29-21</p>
-                    </div>
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <Icon name="Mail" className="text-primary" size={24} />
+                  <div>
+                    <h3 className="font-heading text-lg font-bold mb-2">Email</h3>
+                    <p className="text-muted-foreground">info@kshf58.ru</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card className="border-primary/20">
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-4">
-                    <Icon name="Mail" className="text-primary" size={24} />
-                    <div>
-                      <h3 className="font-heading text-lg font-bold mb-2">Email</h3>
-                      <p className="text-muted-foreground">info@kshf58.ru</p>
-                    </div>
+            <Card className="border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <Icon name="Clock" className="text-primary" size={24} />
+                  <div>
+                    <h3 className="font-heading text-lg font-bold mb-2">Режим работы</h3>
+                    <p className="text-muted-foreground">Пн-Пт: 8:00 - 17:00</p>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-primary/20">
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-4">
-                    <Icon name="Clock" className="text-primary" size={24} />
-                    <div>
-                      <h3 className="font-heading text-lg font-bold mb-2">Режим работы</h3>
-                      <p className="text-muted-foreground">Пн-Пт: 8:00 - 17:00</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
